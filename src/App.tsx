@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <RegForm setEntries={setEntries}/>
-      <RegisteredList entries={entries}/>
+      <RegisteredList entries={entries} setEntries={setEntries}/>
     </div>
   )
 }
