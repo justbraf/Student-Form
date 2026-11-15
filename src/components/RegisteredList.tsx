@@ -1,5 +1,7 @@
-const RegisteredList = ({ entries, setEntries }) => {
-    const handleDelete = (index) => {
+import type {EntryList} from '../logic/interfaces'
+
+const RegisteredList = ({ entries, setEntries }: {entries:EntryList[] | [], setEntries:React.Dispatch<React.SetStateAction<EntryList[] | []>>}) => {
+    const handleDelete = (index: number) => {
         const updEntries = [...entries]
         updEntries.splice(index, 1)
         setEntries(updEntries)
